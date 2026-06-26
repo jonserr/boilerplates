@@ -1,0 +1,235 @@
+---
+config:
+  themeVariables:
+    fontSize: '86px'
+  flowchart:
+    subGraphTitleMargin:
+      top: 150
+      bottom: 150
+    padding: 50
+---
+
+%% Mermaid style-only boilerplate template
+%% Example render command:
+%% mmdc -i diagram.mmd -o diagram.pdf -p "${HOME}/.config/mermaid-cli/puppeteer-config.json" -s3 --pdfFit -w 1000
+
+%%{init: {
+    "theme": "base",
+    "htmlLabels": true,
+    "securityLevel": "loose",
+    "fontFamily": "Helvetica, Arial, sans-serif",
+    "themeVariables": {
+        "primaryTextColor": "#111111",
+        "lineColor": "#374151",
+        "fontFamily": "Helvetica, Arial, sans-serif",
+        "fontSize": "34px",
+        "edgeLabelBackground": "#ffffff"
+    },
+    "flowchart": {
+        "htmlLabels": true,
+        "curve": "basis",
+        "nodeSpacing": 200,
+        "rankSpacing": 200
+    },
+    "markdownAutoWrap": true
+}}%%
+
+flowchart LR
+
+    %% ========================================================================
+    %% DESIGN TOKENS
+    %% ========================================================================
+    %% Fonts:
+    %% - Main font: Helvetica, Arial, sans-serif
+    %% - Monospace font: Menlo, Consolas, monospace
+    %%
+    %% Primary type sizes:
+    %% - Main title / large node title: 86px
+    %% - Body / table text: 80px
+    %% - Mermaid theme fallback font size: 34px
+    %%
+    %% Primary text colors:
+    %% - Near-black: #111111
+    %% - Dark title text: #111827
+    %% - Slate gray: #374151
+    %% - Link gray: #6b7280
+    %%
+    %% Border weights:
+    %% - Standard node stroke: 6px
+    %% - Emphasized path stroke: 8px
+    %% - Heavy node / database stroke: 20px
+    %% - Subgraph stroke: 8px to 20px
+    %% - Link stroke: 20px
+    %%
+    %% Spacing:
+    %% - Node spacing: 200
+    %% - Rank spacing: 200
+    %% - Flowchart padding: 50
+    %% - Subgraph title margin top/bottom: 150
+    %% - Large subgraph title padding: 50px
+    %% - Typical minimum node width: 800px
+    %% - Wide section minimum width: 1200px
+
+    %% ========================================================================
+    %% PALETTE
+    %% ========================================================================
+    %% Neutral / client:
+    %% - Fill:   #f9fafb
+    %% - Stroke: #374151
+    %% - Text:   #111111
+    %%
+    %% Blue section:
+    %% - Node fill:     #dbeafe
+    %% - Node stroke:   #2563eb
+    %% - Subgraph fill: #eff6ff
+    %% - Subgraph line: #93c5fd
+    %% - Title text:    #1d4ed8
+    %%
+    %% Purple section:
+    %% - Node fill:     #ede9fe
+    %% - Node stroke:   #7c3aed
+    %% - Subgraph fill: #f5f3ff
+    %% - Subgraph line: #c4b5fd
+    %% - Title text:    #6d28d9
+    %%
+    %% Teal section:
+    %% - Node fill:     #ccfbf1
+    %% - Node stroke:   #0f766e
+    %% - Subgraph fill: #f0fdfa
+    %% - Subgraph line: #5eead4
+    %% - Title text:    #0f766e
+    %%
+    %% Pink section:
+    %% - Node fill:     #fce7f3
+    %% - Node stroke:   #db2777
+    %% - Subgraph fill: #fdf2f8
+    %% - Subgraph line: #f9a8d4
+    %% - Title text:    #be185d
+    %%
+    %% Orange section:
+    %% - Node fill:     #ffedd5
+    %% - Node stroke:   #ea580c
+    %% - Subgraph fill: #fff7ed
+    %% - Subgraph line: #fdba74
+    %% - Title text:    #c2410c
+    %%
+    %% Green section:
+    %% - Node fill:     #dcfce7
+    %% - Node stroke:   #16a34a
+    %% - Subgraph fill: #f0fdf4
+    %% - Subgraph line: #86efac
+    %% - Title text:    #166534
+    %%
+    %% Gray boundary / infrastructure section:
+    %% - Fill:          #f9fafb
+    %% - Stroke:        #9ca3af
+    %% - Title text:    #374151
+
+    %% ========================================================================
+    %% HTML LABEL SNIPPETS
+    %% ========================================================================
+    %% Use these inside Mermaid node labels when htmlLabels is enabled.
+    %% Replace LABEL_TEXT, BODY_TEXT, SECTION_COLOR, and WIDTH as needed.
+    %%
+    %% Large centered title:
+    %% <div style='font-family:Helvetica,Arial,sans-serif; font-size:86px; font-weight:900; min-width:800px; color:#111827; text-align:center;'>LABEL_TEXT</div>
+    %%
+    %% Large title with section color:
+    %% <div style='font-family:Helvetica,Arial,sans-serif; font-size:86px; font-weight:900; min-width:800px; color:SECTION_COLOR;'>LABEL_TEXT</div>
+    %%
+    %% Medium section node title:
+    %% <div style='font-family:Helvetica,Arial,sans-serif; font-size:80px; font-weight:900; min-width:800px; color:SECTION_COLOR;'>LABEL_TEXT</div>
+    %%
+    %% Body line:
+    %% <div style='font-family:Helvetica,Arial,sans-serif; font-size:80px;'>BODY_TEXT</div>
+    %%
+    %% Monospace line:
+    %% <div style='font-family:Menlo,Consolas,monospace; font-size:80px; color:#374151;'>CODE_OR_PATH_TEXT</div>
+    %%
+    %% Large monospace subtitle:
+    %% <div style='font-family:Menlo,Consolas,monospace; font-size:86px; color:#374151; text-align:center;'>CODE_OR_PATH_TEXT</div>
+    %%
+    %% Wide subgraph title:
+    %% <div style='font-family:Helvetica,Arial,sans-serif; padding:50px; font-size:86px; font-weight:900; min-width:1200px; color:SECTION_COLOR;'>SECTION_TITLE</div>
+
+    %% ========================================================================
+    %% OPTIONAL TABLE LABEL STYLE
+    %% ========================================================================
+    %% Use only when a node needs dense tabular content.
+    %%
+    %% <table border='6' cellspacing='0' cellpadding='0' rules='all' frame='box' style='border-collapse:collapse; margin:14px; border:6px solid #111827 !important; outline:6px solid #111827; outline-offset:-6px; font-family:Helvetica,Arial,sans-serif; font-size:80px; min-width:980px;'>
+    %%   <tr>
+    %%     <th style='border:5px solid #111827 !important; padding:12px; text-align:left;'>HEADER_A</th>
+    %%     <th style='border:5px solid #111827 !important; padding:12px; text-align:left;'>HEADER_B</th>
+    %%   </tr>
+    %%   <tr>
+    %%     <td style='border:5px solid #111827 !important; padding:12px;'>CELL_A</td>
+    %%     <td style='border:5px solid #111827 !important; padding:12px;'>CELL_B</td>
+    %%   </tr>
+    %% </table>
+
+    %% ========================================================================
+    %% ACTIVE CLASS DEFINITIONS
+    %% ========================================================================
+    %% Apply classes after creating nodes:
+    %% class NODE_ID_A,NODE_ID_B blue;
+
+    classDef neutral fill:#f9fafb,stroke:#374151,stroke-width:6px,color:#111111;
+
+    classDef blue fill:#dbeafe,stroke:#2563eb,stroke-width:6px,color:#111111;
+    classDef purple fill:#ede9fe,stroke:#7c3aed,stroke-width:6px,color:#111111;
+    classDef teal fill:#ccfbf1,stroke:#0f766e,stroke-width:20px,color:#111111;
+    classDef pink fill:#fce7f3,stroke:#db2777,stroke-width:6px,color:#111111;
+    classDef orange fill:#ffedd5,stroke:#ea580c,stroke-width:6px,color:#111111;
+    classDef green fill:#dcfce7,stroke:#16a34a,stroke-width:20px,color:#111111;
+    classDef gray fill:#f9fafb,stroke:#9ca3af,stroke-width:20px,color:#111111;
+
+    classDef readPath fill:#dbeafe,stroke:#2563eb,stroke-width:8px,color:#111111;
+    classDef writePath fill:#ffedd5,stroke:#ea580c,stroke-width:8px,color:#111111;
+    classDef transparent fill:transparent,stroke:transparent,color:#111111;
+
+    %% ========================================================================
+    %% SUBGRAPH STYLE TEMPLATES
+    %% ========================================================================
+    %% Mermaid requires these to reference real subgraph IDs.
+    %% Uncomment only after creating matching subgraphs.
+    %%
+    %% style YOUR_BLUE_GROUP fill:#eff6ff,stroke:#93c5fd,stroke-width:20px,color:#111111
+    %% style YOUR_PURPLE_GROUP fill:#f5f3ff,stroke:#c4b5fd,stroke-width:20px,color:#111111
+    %% style YOUR_TEAL_GROUP fill:#f0fdfa,stroke:#5eead4,stroke-width:8px,color:#111111
+    %% style YOUR_PINK_GROUP fill:#fdf2f8,stroke:#f9a8d4,stroke-width:20px,color:#111111
+    %% style YOUR_ORANGE_GROUP fill:#fff7ed,stroke:#fdba74,stroke-width:20px,color:#111111
+    %% style YOUR_GREEN_GROUP fill:#f0fdf4,stroke:#86efac,stroke-width:20px,color:#111111
+    %% style YOUR_GRAY_GROUP fill:#f9fafb,stroke:#9ca3af,stroke-width:20px,color:#111111
+    %% style YOUR_NESTED_GROUP fill:transparent,stroke:transparent
+
+    %% ========================================================================
+    %% LINK STYLE TEMPLATES
+    %% ========================================================================
+    %% Link style indices depend on the order of active edges in your diagram.
+    %% Keep these commented until the final edge order is known.
+    %%
+    %% linkStyle default stroke:#6b7280,stroke-width:20px,font-size:80px
+    %% linkStyle 0 stroke:#2563eb,stroke-width:20px,font-size:80px
+    %% linkStyle 1 stroke:#db2777,stroke-width:20px,font-size:80px
+    %% linkStyle 2 stroke:#ea580c,stroke-width:20px,font-size:80px
+    %% linkStyle 3 stroke:#0f766e,stroke-width:20px,font-size:80px
+    %% linkStyle 4 stroke:#16a34a,stroke-width:20px,stroke-dasharray:8 6,font-size:80px
+
+    %% ========================================================================
+    %% OPTIONAL STARTER SKELETON
+    %% ========================================================================
+    %% Uncomment and edit when starting a new diagram.
+    %%
+    %% Entry["<div style='font-family:Helvetica,Arial,sans-serif; font-size:86px; font-weight:900; min-width:800px; color:#111827; text-align:center;'>ENTRYPOINT</div>"]
+    %%
+    %% subgraph YOUR_BLUE_GROUP["<div style='font-family:Helvetica,Arial,sans-serif; font-size:86px; font-weight:900; min-width:800px; color:#1d4ed8;'>SECTION_TITLE</div>"]
+    %%     direction TB
+    %%     BlueNode["<div style='font-family:Helvetica,Arial,sans-serif; font-size:80px; font-weight:900; min-width:800px; color:#1d4ed8;'>NODE_TITLE</div><div style='font-family:Helvetica,Arial,sans-serif; font-size:80px;'>NODE_BODY</div>"]
+    %% end
+    %%
+    %% Entry --> BlueNode
+    %% class Entry neutral;
+    %% class BlueNode blue;
+    %% style YOUR_BLUE_GROUP fill:#eff6ff,stroke:#93c5fd,stroke-width:20px,color:#111111
+    %% linkStyle default stroke:#6b7280,stroke-width:20px,font-size:80px
