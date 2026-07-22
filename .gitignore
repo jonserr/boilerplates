@@ -1,0 +1,835 @@
+# ============================================================================
+# OPERATING SYSTEM FILES
+# ============================================================================
+
+# macOS ----------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100/
+.fseventsd/
+.Spotlight-V100/
+.TemporaryItems/
+.Trashes/
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+Network Trash Folder/
+Temporary Items/
+.apdisk
+
+# Windows ----------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
+[Dd]esktop.ini
+*.lnk
+
+# Linux ----------------
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# EDITORS AND INTEGRATED DEVELOPMENT ENVIRONMENTS
+# ============================================================================
+
+# Visual Studio Code ----------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+!.vscode/tasks.example.json
+!.vscode/launch.example.json
+*.code-workspace
+
+# JetBrains ----------------
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Visual Studio ----------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# Vim ----------------
+*.swp
+*.swo
+*.swn
+*.un~
+Session.vim
+.netrwhist
+
+# Emacs ----------------
+*~
+#*#
+.#*
+.emacs.desktop
+.emacs.desktop.lock
+*.elc
+auto-save-list/
+tramp
+.#*
+
+# Sublime Text ----------------
+*.sublime-workspace
+*.sublime-project
+
+# Other editor files ----------------
+.history/
+.project
+.classpath
+.settings/
+.factorypath
+
+# ============================================================================
+# SECRETS, CREDENTIALS, AND LOCAL ENVIRONMENT FILES
+# ============================================================================
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.test.example
+
+.envrc
+.direnv/
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+
+credentials.json
+credentials.yml
+credentials.yaml
+secrets.json
+secrets.yml
+secrets.yaml
+
+*.credentials
+*.secret
+*.secrets
+
+# Cloud credentials ----------------
+.aws/
+.azure/
+.gcloud/
+.kube/config
+
+# Local application configuration ----------------
+config.local.*
+*.local.config
+*.local.json
+*.local.yml
+*.local.yaml
+settings.local.*
+application-local.*
+application.*.local.*
+
+# ============================================================================
+# LOGS, PROCESS FILES, AND RUNTIME OUTPUT
+# ============================================================================
+logs/
+log/
+*.log
+*.log.*
+*.out
+*.err
+
+*.pid
+*.pid.lock
+*.seed
+*.pidfile
+
+pids/
+run/
+runtime/
+
+*.retry
+*.trace
+*.stacktrace
+
+# Debug output ----------------
+debug/
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# HPC and batch-job output ----------------
+slurm-*.out
+slurm-*.err
+*.o[0-9]*
+*.e[0-9]*
+
+# ============================================================================
+# TEMPORARY FILES AND CACHES
+# ============================================================================
+tmp/
+temp/
+.temp/
+.tmp/
+
+cache/
+.cache/
+*.cache
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+*.lock~
+*.save
+*.autosave
+
+# Generic caches ----------------
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.sass-cache/
+.nyc_output/
+.node_repl_history
+
+# ============================================================================
+# ARCHIVES AND COMPRESSED FILES
+# ============================================================================
+*.7z
+*.bz2
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.tgz
+*.xz
+*.zip
+*.zst
+
+# ============================================================================
+# BUILD OUTPUTS AND GENERATED ARTIFACTS
+# ============================================================================
+build/
+dist/
+output/
+outputs/
+artifacts/
+generated/
+public/build/
+site/
+
+bin/
+obj/
+target/
+
+*.egg-info/
+*.dist-info/
+
+*.min.js
+*.min.css
+*.map
+
+# Packaged binaries and libraries ----------------
+
+*.a
+*.app
+*.dll
+*.dylib
+*.exe
+*.lib
+*.o
+*.obj
+*.pyc
+*.pyd
+*.pyo
+*.so
+
+# ============================================================================
+# TESTING AND COVERAGE
+# ============================================================================
+coverage/
+coverage.xml
+coverage.json
+htmlcov/
+.coverage
+.coverage.*
+.coverage-reports/
+
+test-results/
+test-output/
+reports/
+allure-results/
+allure-report/
+
+*.lcov
+lcov.info
+
+junit.xml
+pytest-report.xml
+
+# ============================================================================
+# PYTHON
+
+# ============================================================================
+# Bytecode ----------------
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments ----------------
+
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-env/
+
+# Python version managers ----------------
+
+.python-version
+.python-version.local
+
+# Package builds ----------------
+
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+pip-wheel-metadata/
+MANIFEST
+
+# Test and analysis caches ----------------
+
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.pyre/
+.pytype/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+
+# Coverage ----------------
+
+.coverage
+.coverage.*
+htmlcov/
+
+# Framework files ----------------
+
+instance/
+.webassets-cache/
+
+# Django ----------------
+
+*.mo
+*.pot
+db.sqlite3
+db.sqlite3-journal
+local_settings.py
+staticfiles/
+media/
+
+# Flask ----------------
+
+instance/
+.webassets-cache/
+
+# Scrapy ----------------
+
+.scrapy/
+
+# Sphinx ----------------
+
+docs/_build/
+
+# Jupyter ----------------
+
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# IPython ----------------
+
+profile_default/
+ipython_config.py
+
+# PyInstaller ----------------
+
+*.manifest
+*.spec
+
+# Celery ----------------
+
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath ----------------
+
+*.sage.py
+
+# ============================================================================
+# JAVASCRIPT, TYPESCRIPT, AND NODE.JS
+# ============================================================================
+node_modules/
+jspm_packages/
+bower_components/
+
+# Package manager caches ----------------
+
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Yarn Plug'n'Play ----------------
+
+.pnp
+.pnp.js
+.pnp.cjs
+.pnp.loader.mjs
+
+# Framework output ----------------
+
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+.angular/
+.vuepress/dist/
+.docusaurus/
+.gatsby-cache/
+.vercel/
+.netlify/
+
+# Bundler output ----------------
+
+.parcel-cache/
+.turbo/
+.rollup.cache/
+vite.config.*.timestamp-*
+vite.config.*.mjs
+
+# TypeScript ----------------
+
+*.tsbuildinfo
+
+# Testing ----------------
+
+.nyc_output/
+coverage/
+playwright-report/
+test-results/
+blob-report/
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# Storybook ----------------
+
+storybook-static/
+
+# ============================================================================
+# JAVA, KOTLIN, GRADLE, AND MAVEN
+# ============================================================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar.tmp
+
+target/
+out/
+
+hs_err_pid*
+replay_pid*
+
+# Kotlin ----------------
+
+.kotlin/
+*.kotlin_module
+
+# ============================================================================
+# C, C++, CMAKE, AND AUTOTOOLS
+# ============================================================================
+*.d
+*.o
+*.obj
+*.lo
+*.la
+*.lai
+*.so
+*.so.*
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+
+*.out
+*.app
+
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake-build-*/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+Makefile.in
+aclocal.m4
+autom4te.cache/
+config.guess
+config.log
+config.status
+config.sub
+configure
+depcomp
+install-sh
+libtool
+ltmain.sh
+missing
+mkinstalldirs
+
+# ============================================================================
+# GO
+# ============================================================================
+*.test
+*.prof
+*.coverprofile
+coverage.out
+
+vendor/
+go.work.sum
+
+# ============================================================================
+# RUST
+# ============================================================================
+target/
+debug/
+release/
+
+*.rs.bk
+
+============================================================================
+# R
+# ============================================================================
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
+.Rprofile
+.Renviron
+
+.Rproj.user/
+*.Rproj
+
+.Rcache/
+.Rproj.user/
+.Rcheck/
+check/
+
+*-Ex.R
+/*.tar.gz
+
+renv/library/
+renv/staging/
+renv/python/
+renv/local/
+renv/cellar/
+
+packrat/lib*/
+packrat/src/
+packrat/packrat.lock.bak
+
+# R Markdown and Quarto ----------------
+
+*_cache/
+*_files/
+.rsconnect/
+.quarto/
+.quarto-preview/
+_freeze/
+
+# ============================================================================
+# JULIA
+# ============================================================================
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+deps/deps.jl
+deps/build.log
+deps/downloads/
+deps/usr/
+
+docs/build/
+Manifest.toml
+
+# Commit Manifest.toml for Julia applications when reproducibility needed
+
+============================================================================
+# RUBY
+# ============================================================================
+.bundle/
+vendor/bundle/
+vendor/cache/
+.ruby-version
+.ruby-gemset
+
+*.gem
+*.rbc
+/.config
+/InstalledFiles
+/spec/reports/
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+.byebug_history
+.rspec_status
+
+# ============================================================================
+# PHP AND COMPOSER
+# ============================================================================
+vendor/
+composer.phar
+
+.phpunit.result.cache
+.phpunit.cache/
+.php-cs-fixer.cache
+.phpactor.json
+.phpstorm.meta.php/
+
+auth.json
+
+# ============================================================================
+# .NET AND C#
+# ============================================================================
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.csproj.user
+
+*.dll
+*.exe
+*.pdb
+*.cache
+*.nupkg
+*.snupkg
+
+packages/
+.nuget/
+TestResults/
+
+# ============================================================================
+# SWIFT, XCODE, AND APPLE DEVELOPMENT
+# ============================================================================
+DerivedData/
+.build/
+.swiftpm/
+Package.resolved.local
+
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+xcuserdata/
+
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+Pods/
+Carthage/Build/
+
+# ============================================================================
+# DATABASES AND LOCAL DATA STORES
+# ============================================================================
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+*.mdb
+*.accdb
+
+dump.rdb
+appendonly.aof
+
+*.dump
+*.sql.gz
+*.backup.sql
+
+
+# ============================================================================
+# DOCKER AND CONTAINERS
+# ============================================================================
+
+# Ignore only machine-specific overrides or generated container data ----------------
+
+docker-compose.local.yml
+docker-compose.local.yaml
+compose.local.yml
+compose.local.yaml
+
+.docker/
+docker-data/
+container-data/
+
+# Apptainer and Singularity images ----------------
+
+*.sif
+*.img
+*.sqsh
+
+
+# ============================================================================
+# DOCUMENTATION GENERATORS
+# ============================================================================
+docs/_build/
+docs/build/
+docs/site/
+site/
+
+.myst/
+.mkdocs_cache/
+
+# ============================================================================
+# STATIC SITE AND CLOUD PLATFORM OUTPUT
+# ============================================================================
+.vercel/
+.netlify/
+.firebase/
+.serverless/
+.serverless_plugins/
+.aws-sam/
+.sst/
+.amplify/
+
+# ============================================================================
+# LOCAL DEVELOPMENT TOOLS
+# ============================================================================
+.devbox/
+.devenv/
+.direnv/
+.envrc.local
+
+.mise.local.toml
+.tool-versions.local
+
+.task/
+.just/
+.dagger/
+.tiltbuild/
+
+# ============================================================================
+# PACKAGE AND RELEASE OUTPUT
+# ============================================================================
+*.whl
+*.egg
+*.gem
+*.deb
+*.rpm
+*.msi
+*.pkg
+
+release/
+releases/
+
+# ============================================================================
+# GENERATED MEDIA AND LARGE LOCAL ARTIFACTS
+# ============================================================================
+*.coverage
+*.prof
+*.profile
+*.pprof
+
+*.core
+core
+core.*
+
+
+# ============================================================================
+# LOCAL PATCHES AND PERSONAL NOTES
+# ============================================================================
+*.patch.local
+*.diff.local
+
+notes.local.*
+scratch/
+sandbox/
+playground.local/
+
+# ============================================================================
+# EXPLICITLY RETAIN COMMON TEMPLATE FILES
+# ============================================================================
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.env.example
+!.env.sample
+!.env.template
+!README.md
+!LICENSE
+!Makefile
